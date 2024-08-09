@@ -1,0 +1,5 @@
+#PROFILES: dev, test, prod
+spring:
+    profiles:
+        active: test
+    
