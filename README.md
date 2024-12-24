@@ -39,4 +39,4 @@ conhecer as rotas mapeadas e como usa-las na documentação do Swagger
 
 *The* [*MIT License*](LICENSE.md) (*MIT*)
 
-*Copyright :copyright: 2024* 
+### _Gilberto | Dev 2024_
