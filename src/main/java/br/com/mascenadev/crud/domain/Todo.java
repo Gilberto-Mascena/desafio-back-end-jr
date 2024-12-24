@@ -10,7 +10,7 @@ import jakarta.validation.constraints.NotBlank;
 @Entity
 @Table(name = "todos")
 public class Todo {
-    
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -124,6 +124,4 @@ public class Todo {
         return "Todo [id=" + id + ", nome=" + nome + ", descricao=" + descricao + ", realizado=" + realizado
                 + ", prioridade=" + prioridade + "]";
     }
-    
-    
 }

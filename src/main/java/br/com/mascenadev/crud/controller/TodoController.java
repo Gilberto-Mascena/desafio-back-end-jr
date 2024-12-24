@@ -22,11 +22,11 @@ public class TodoController {
 
     private TodoService todoService;
 
-    //Injeção de dependência via construtor sem a necessidade de anotação
+    // Injeção de dependência via construtor sem a necessidade de anotação
     public TodoController(TodoService todoService) {
         this.todoService = todoService;
     }
-    
+
     @PostMapping
     @Transactional
     List<Todo> create(@RequestBody @Valid Todo todo) {
@@ -44,13 +44,13 @@ public class TodoController {
     @Transactional
     List<Todo> update(@PathVariable Long id, @RequestBody Todo todo) {
 
-        return todoService.update(id, todo);        
+        return todoService.update(id, todo);
     }
 
     @DeleteMapping("/{id}")
     @Transactional
-    List<Todo> delete(@PathVariable Long id) {  
-       
+    List<Todo> delete(@PathVariable Long id) {
+
         return todoService.delete(id);
     }
 }

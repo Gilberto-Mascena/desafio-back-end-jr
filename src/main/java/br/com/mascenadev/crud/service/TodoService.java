@@ -40,7 +40,7 @@ public class TodoService {
 
         if (obj.isEmpty()) {
             ResponseEntity.notFound().build();
-            return list();            
+            return list();
         }
 
         if (obj.isPresent()) {
