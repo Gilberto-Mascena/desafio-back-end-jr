@@ -4,11 +4,11 @@ spring:
         url: ${DB_URL}
         username: ${DB_USERNAME}
         password: ${DB_PASSWORD}
-        driver-class-name: com.mysql.cj.jdbc.Driver 
+        driver-class-name: ${DB_DRIVER}
 
 #JPA
     jpa:
         hibernate:
-            ddl-auto: update
-        show-sql: true       
-        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+            ddl-auto: ${DB_HIBERNATE_DDL_AUTO}
+        show-sql: ${DB_SHOW_SQL}
+        dialect: ${DB_DIALECT}
