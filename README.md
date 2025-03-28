@@ -1,3 +1,5 @@
+[English](https://github.com/Gilberto-Mascena/desafio-back-end-jr/blob/main/README.md) | [Português Brasileiro](https://github.com/Gilberto-Mascena/desafio-back-end-jr/blob/main/README-pt_br.md)
+
 # Project Presentation
 
 ## Crud with operations to create TodoList
