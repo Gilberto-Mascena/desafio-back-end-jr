@@ -1,8 +1,8 @@
-# 🛠 Apresentação do projeto
+# Project Presentation
 
-## Crud com as operações para criação de TodoList
+## Crud with operations to create TodoList
 
-## Tecnologias Adotadas
+## Technologies Adopted
 - [Java 21](https://www.oracle.com/br/java/technologies/downloads/)
 - [Spring Boot](https://spring.io/projects/spring-boot)
 - [JPA](https://spring.io/projects/spring-data-jpa)
@@ -12,26 +12,26 @@
 
 ---
 
-## Requisitos
+## Requirements
 - [Java 21](https://www.oracle.com/br/java/technologies/downloads/)
 - [MySQL](https://www.mysql.com)
 - [Maven](https://maven.apache.org)
 
 ---
 
-## Como rodar a aplicação
-- Clone o repositório
-- Criar a base de Dados
-- Configure o arquivo application-test.yml com as informações do seu banco de dados
+## How to run the application
+- Clone the repository
+- Create the database
+- Configure the application-test.yml file with your database information
 
-- Abra um terminal ou prompt na raís do projeto e execute o comando abaixo:
+- Open a terminal or prompt in the project root and run the command below:
 ```
- mvn spring-boot:run
+mvn spring-boot:run
 ```
 
-- Utilize o Browser ou Postman para testar a aplicação
-- Acesse o endpoint: http://localhost:8080/swagger-ui/index.html, para
-conhecer as rotas mapeadas e como usa-las na documentação do Swagger
+- Use the Browser or Postman to test the application
+- Access the endpoint: http://localhost:8080/swagger-ui/index.html, to
+  learn about the mapped routes and how to use them in the Swagger documentation
 
 ---
 
