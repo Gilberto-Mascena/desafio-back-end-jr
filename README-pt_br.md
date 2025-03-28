@@ -1,5 +1,14 @@
 [Português Brasileiro](https://github.com/Gilberto-Mascena/desafio-back-end-jr/blob/main/README-pt_br.md) | [English](https://github.com/Gilberto-Mascena/desafio-back-end-jr/blob/main/README.md)
 
+[![Status de Manutenção](https://img.shields.io/badge/Maintained-Yes-brightgreen?style=for-the-badge)](https://GitHub.com/Gilberto-Mascena/desafio-back-end-jr)
+[![GitHub Actions Status](https://img.shields.io/github/actions/workflow/status/Gilberto-Mascena/desafio-back-end-jr/build.yml?style=for-the-badge)](https://github.com/Gilberto-Mascena/desafio-back-end-jr/actions)
+[![Licença](https://img.shields.io/github/license/Gilberto-Mascena/desafio-back-end-jr?style=for-the-badge)](https://github.com/Gilberto-Mascena/desafio-back-end-jr/blob/main/LICENSE.md)
+[![Estrelas no GitHub](https://img.shields.io/github/stars/Gilberto-Mascena/desafio-back-end-jr?style=for-the-badge)](https://github.com/Gilberto-Mascena/desafio-back-end-jr/stargazers)
+[![Problemas no GitHub](https://img.shields.io/github/issues/Gilberto-Mascena/desafio-back-end-jr?style=for-the-badge)](https://github.com/Gilberto-Mascena/desafio-back-end-jr/issues)
+[![Versão do Repositório](https://img.shields.io/github/v/release/Gilberto-Mascena/desafio-back-end-jr?include_prereleases&style=for-the-badge)](https://github.com/Gilberto-Mascena/desafio-back-end-jr/releases)
+![Data de Lançamento](https://img.shields.io/github/release-date/Gilberto-Mascena/desafio-back-end-jr?style=for-the-badge)
+![Tamanho do Repositório](https://img.shields.io/github/repo-size/Gilberto-Mascena/desafio-back-end-jr?style=for-the-badge)
+
 # Apresentação do projeto
 
 ## Crud com as operações para criação de TodoList
