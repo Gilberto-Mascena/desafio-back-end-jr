@@ -1,5 +1,11 @@
+todo-api:
+    api:
+        version: 1.0.0
+
 #PROFILES: dev, test, prod
 spring:
     profiles:
         active: test
+
+
     
