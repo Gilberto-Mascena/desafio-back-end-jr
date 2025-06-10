@@ -1,11 +1,11 @@
+# API configuration version and active profile
 todo-api:
-    api:
-        version: 1.0.0
+  api:
+    version: 1.0.0
 
-#PROFILES: dev, test, prod
 spring:
-    profiles:
-        active: test
+  profiles:
+    active: test
 
 
     
