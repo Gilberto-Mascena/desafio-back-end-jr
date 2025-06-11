@@ -71,72 +71,72 @@ public class TodoRequestDTO {
     }
 
     /**
-     * Obtém o título.
+     * Obtém o título da tarefa.
      *
-     * @return o título
+     * @return o título da tarefa
      */
     public String getTitulo() {
         return titulo;
     }
 
     /**
-     * Define o título
+     * Define o título da tarefa.
      *
-     * @param titulo o novo título
+     * @param titulo o novo título da tarefa
      */
     public void setTitulo(String titulo) {
         this.titulo = titulo;
     }
 
     /**
-     * Obtém a descrição.
+     * Obtém a descrição da tarefa.
      *
-     * @return a descrição
+     * @return a descrição da tarefa
      */
     public String getDescricao() {
         return descricao;
     }
 
     /**
-     * Define a descrição.
+     * Define a descrição da tarefa.
      *
-     * @param descricao a nova descrição
+     * @param descricao a nova descrição da tarefa
      */
     public void setDescricao(String descricao) {
         this.descricao = descricao;
     }
 
     /**
-     * Obtém o estado se realizado.
+     * Obtém o status de realização da tarefa.
      *
-     * @return o estado
+     * @return o status de realização da tarefa
      */
     public Boolean getRealizado() {
         return realizado;
     }
 
     /**
-     * Define o estado.
+     * Define o status de realização da tarefa.
      *
-     * @param realizado o novo estado
+     * @param realizado o novo status de realização da tarefa
      */
     public void setRealizado(Boolean realizado) {
         this.realizado = realizado;
     }
 
     /**
-     * Obtém a prioridade.
+     * Obtém a prioridade da tarefa.
      *
-     * @return a prioridade
+     * @return a prioridade da tarefa
      */
     public Integer getPrioidade() {
         return prioridade;
     }
 
     /**
-     * Define a prioridade.
+     * Define a prioridade da tarefa.
      *
-     * @param prioidade a nova prioridade
+     * @param prioidade a nova prioridade da tarefa
      */
     public void setPrioridade(Integer prioidade) {
         this.prioridade = prioidade;
