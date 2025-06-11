@@ -97,7 +97,7 @@ public class GlobalExceptionHandler {
                 LocalDateTime.now(),
                 HttpStatus.INTERNAL_SERVER_ERROR.value(),
                 "Erro interno no servidor",
-                "Ocorreu um erro inesperado. Por favor, tente novamente mais tarde." // Mensagem genérica para o cliente
+                "Ocorreu um erro inesperado. Por favor, tente novamente mais tarde."
         );
         return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(erroResponse);
     }
