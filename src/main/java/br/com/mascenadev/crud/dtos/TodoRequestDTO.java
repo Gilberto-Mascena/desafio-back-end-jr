@@ -129,17 +129,17 @@ public class TodoRequestDTO {
      *
      * @return a prioridade da tarefa
      */
-    public Integer getPrioidade() {
+    public Integer getPrioridade() {
         return prioridade;
     }
 
     /**
      * Define a prioridade da tarefa.
      *
-     * @param prioidade a nova prioridade da tarefa
+     * @param prioridade a nova prioridade da tarefa
      */
-    public void setPrioridade(Integer prioidade) {
-        this.prioridade = prioidade;
+    public void setPrioridade(Integer prioridade) {
+        this.prioridade = prioridade;
     }
 
     /**
