@@ -6,6 +6,3 @@ todo-api:
 spring:
   profiles:
     active: test
-
-
-    
