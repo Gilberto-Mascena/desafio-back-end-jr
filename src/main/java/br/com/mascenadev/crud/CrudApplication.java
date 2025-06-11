@@ -7,8 +7,8 @@ import org.springframework.context.annotation.Profile;
 @SpringBootApplication
 public class CrudApplication {
 
-	@Profile("test")
-	public static void main(String[] args) {
-		SpringApplication.run(CrudApplication.class, args);
-	}
+    @Profile("test")
+    public static void main(String[] args) {
+        SpringApplication.run(CrudApplication.class, args);
+    }
 }
