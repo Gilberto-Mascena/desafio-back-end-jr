@@ -118,6 +118,10 @@ Você pode acessar o console do H2 em: http://localhost:8080/h2-console
   conhecer as rotas mapeadas e como usa-las na documentação do Swagger
 
 ---
+## Front-End da Aplicação
+![front-end](/doc/imgs/todo-front-end.png)
+
+---
 
 ## Como Usar a API (com Postman)
 
