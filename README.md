@@ -116,6 +116,11 @@ You can access the H2 console at: http://localhost:8080/h2-console
 
 ---
 
+## Application Front-End
+![front-end](/doc/imgs/todo-front-end.png)
+
+---
+
 ## How to Use the API (with Postman)
 
 To facilitate interaction with the API, you can import the `collection.json` provided in Postman.
