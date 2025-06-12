@@ -1,0 +1,209 @@
+{
+  "info": {
+    "_postman_id": "YOUR_COLLECTION_ID_HERE",
+    "name": "CRUD Tarefas API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_collection_link": "YOUR_COLLECTION_LINK_HERE"
+  },
+  "item": [
+    {
+      "name": "Criar Tarefa",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"titulo\": \"Comprar alimentos\",\n    \"descricao\": \"Ir ao supermercado e comprar frutas, verduras e carne\",\n    \"realizado\": false,\n    \"prioridade\": 4\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/todos",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "todos"
+          ]
+        },
+        "description": "Cria uma nova tarefa no sistema."
+      },
+      "response": []
+    },
+    {
+      "name": "Listar Todas as Tarefas",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/todos",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "todos"
+          ]
+        },
+        "description": "Lista todas as tarefas existentes, ordenadas por prioridade e título."
+      },
+      "response": []
+    },
+    {
+      "name": "Buscar Tarefa por ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/todos/{{todo_id}}",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "todos",
+            "{{todo_id}}"
+          ]
+        },
+        "description": "Busca uma tarefa específica utilizando seu ID."
+      },
+      "response": []
+    },
+    {
+      "name": "Atualizar Tarefa",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"titulo\": \"Pagar contas de Julho\",\n    \"descricao\": \"Agendar pagamentos de água, luz e internet\",\n    \"realizado\": true,\n    \"prioridade\": 1\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/todos/{{todo_id}}",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "todos",
+            "{{todo_id}}"
+          ]
+        },
+        "description": "Atualiza uma tarefa existente pelo seu ID."
+      },
+      "response": []
+    },
+    {
+      "name": "Deletar Tarefa",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/todos/{{todo_id}}",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "todos",
+            "{{todo_id}}"
+          ]
+        },
+        "description": "Deleta uma tarefa específica pelo seu ID."
+      },
+      "response": []
+    },
+    {
+      "name": "Exemplo de Validação (Bad Request)",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"titulo\": \"a\",\n    \"descricao\": \"\",\n    \"realizado\": null,\n    \"prioridade\": -1\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/todos",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "todos"
+          ]
+        },
+        "description": "Exemplo de requisição que deve resultar em erro de validação (HTTP 400)."
+      },
+      "response": []
+    },
+    {
+      "name": "Exemplo de Não Encontrado (Not Found)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/todos/9999",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "todos",
+            "9999"
+          ]
+        },
+        "description": "Exemplo de requisição que deve resultar em erro de recurso não encontrado (HTTP 404)."
+      },
+      "response": []
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "exec": [
+          "// Exemplo de variável de ambiente para o ID da tarefa\n// pm.environment.set(\"todo_id\", \"1\");"
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "exec": [
+          "// Exemplo de teste para capturar o ID de uma tarefa criada\n// var jsonData = pm.response.json();\n// if (jsonData && jsonData.id) {\n//     pm.environment.set(\"todo_id\", jsonData.id);\n//     console.log(\"ID da Tarefa: \" + jsonData.id);\n// }"
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "todo_id",
+      "value": "1",
+      "type": "string",
+      "description": "ID de uma tarefa para ser usado em requisições de buscar, atualizar e deletar."
+    }
+  ]
+}
