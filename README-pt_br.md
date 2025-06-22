@@ -38,39 +38,59 @@ A API oferece os seguintes endpoints:
 
 ### Estrutura do Projeto
 
-``` text
-src/
-├── main/
-│    ├── java/
-│    │   └── br/com/mascenadev/crud/
-│    │       ├── config/               # Configurações do Swagger
-│    │       ├── controller/           # Controladores REST
-│    │       ├── dtos/                  # Objetos de Transferência de Dados (DTOs)
-│    │       ├── model/             # Entidades JPA
-│    │       ├── exception/            # Exceções personalizadas
-│    │       ├── repository/           # Repositórios JPA
-│    │       ├── service/              # Serviços de negócio
-│    │       └── CrudApplication.java # Classe principal
-│    └── resources/
-│        └── static/                  # Recursos estáticos (HTML, CSS, JS)
-│        └── templates/               # Templates Thymeleaf (se necessário)
-│        ├── application.yml          # Configurações do Spring Boot
-│        └── application.dev.yml   # Configurações do Spring Boot
-│        └── application.prod.yml   # Configurações do Spring Boot
-│        ├── application-test.yml     # Configurações específicas para testes
-├── test/
-│    ├── java/
-│        └── br/com/mascenadev/crud/
-│            └── CrudApplicationTests.java # Testes unitários
-│── target/                # Diretório gerado pelo Maven com os artefatos compilados
-├── .gitatributes            # Configurações do Git
-├── .gitignore               # Arquivo para ignorar arquivos/diretórios no Git
-├── HELP.md                # Documentação de ajuda do projeto
-├── mvnw                  # Script para executar o Maven
-├── mvnw.cmd              # Script para executar o Maven no Windows
-├── pom.xml                 # Arquivo de configuração do Maven
-├── README.md               # Documentação do projeto
-├── README-pt_br.md               # Documentação do projeto
+``` plantext
+├── changelog.md
+├── doc
+│   └── imgs
+│       ├── crud_api_postman_collection.json
+│       └── todo-front-end.png
+├── LICENSE.md
+├── mvnw
+├── mvnw.cmd
+├── pom.xml
+├── README.md
+├── README-pt_br.md
+└── src
+    ├── main
+    │   ├── java
+    │   │   └── br
+    │   │       └── com
+    │   │           └── mascenadev
+    │   │               └── crud
+    │   │                   ├── config
+    │   │                   │   ├── SwaggerConfig.java
+    │   │                   │   └── WebConfig.java
+    │   │                   ├── controller
+    │   │                   │   └── TodoController.java
+    │   │                   ├── CrudApplication.java
+    │   │                   ├── domain
+    │   │                   │   └── Todo.java
+    │   │                   ├── dtos
+    │   │                   │   ├── TodoRequestDTO.java
+    │   │                   │   └── TodoResponseDTO.java
+    │   │                   ├── exception
+    │   │                   │   ├── ErroResponse.java
+    │   │                   │   ├── GlobalExceptionHandler.java
+    │   │                   │   └── TodoNaoEncontradoException.java
+    │   │                   ├── repository
+    │   │                   │   └── TodoRepository.java
+    │   │                   └── service
+    │   │                       └── TodoService.java
+    │   └── resources
+    │       ├── application-dev.yml
+    │       ├── application-prod.yml
+    │       ├── application-test.yml
+    │       ├── application.yml
+    │       └── META-INF
+    │           └── additional-spring-configuration-metadata.json
+    └── test
+        └── java
+            └── br
+                └── com
+                    └── mascenadev
+                        └── crud
+                            └── CrudApplicationTests.java
+
 ```
 
 ## Como Executar o Projeto
