@@ -22,9 +22,10 @@ jobs:
       - name: Build project and create zip
         run: |
           echo "Building project..."
-          zip -q -r crud.zip # Create a zip file of the project
+          zip -q -r crud.zip .
           echo "Project built and zipped."
           ls -l *.zip
+
       - name: Create Release and Upload Asset
         uses: softprops/action-gh-release@v1
         with:
