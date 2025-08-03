@@ -22,7 +22,7 @@ jobs:
       - name: Build project and create zip
         run: |
           echo "Building project..."
-          zip -q -r *.zip # Create a zip file of the project
+          zip -q -r crud.zip # Create a zip file of the project
           echo "Project built and zipped."
           ls -l *.zip
       - name: Create Release and Upload Asset
